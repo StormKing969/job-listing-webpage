@@ -1,0 +1,18 @@
+.attribution { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px; 
+    text-align: center; 
+    margin: .2rem .5rem;
+    color: $very-dark-grayish-cyan; 
+
+    a { 
+        color: $very-dark-grayish-cyan; 
+        text-decoration: underline;
+
+        &:hover {
+            color: $light-grayish-cyan;
+        }
+    }
+}

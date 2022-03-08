@@ -1,0 +1,24 @@
+// Layout
+
+$width-mobile: 375px;
+$width-desktop: 1440px;
+
+// Primary Color
+
+$desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+// Neutral Colors
+
+$light-grayish-cyan-bg: hsl(178, 78%, 93%); // Background
+$light-grayish-cyan: hsl(180, 31%, 95%); // Filter Tablets
+$dark-grayish-cyan: hsl(180, 8%, 52%);
+$dark-grayish-cyan-attributes: hsla(180, 40%, 83%, 0.828);
+$very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+$cross-btn-hover: hsla(180, 39%, 56%, 0.828); 
+
+// Typography
+
+$normal-size: 15px;
+$regular-weight: 500;
+$bold-weight: 700;
