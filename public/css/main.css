@@ -197,13 +197,22 @@ a {
   margin-right: 1rem;
 }
 
+.company .quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 1rem;
+}
+
 .company .quality span {
   background: #5ba4a4;
   border-radius: 2rem;
   padding: .5rem .6rem;
   font-size: .8rem;
   font-weight: 700;
-  margin: 0 .1rem;
+  margin: 0 .1rem .5rem;
   text-align: center;
 }
 
@@ -239,6 +248,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -265,12 +276,18 @@ a {
 }
 
 .job_languages {
-  margin-bottom: 1rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .job_languages span {
@@ -280,7 +297,8 @@ a {
   font-size: .8rem;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
+  margin: 0 0 .8rem;
   -webkit-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
   cursor: pointer;
@@ -299,9 +317,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-size: 11px;
   text-align: center;
   margin: .2rem .5rem;
@@ -314,6 +331,6 @@ a {
 }
 
 .attribution a:hover {
-  color: #eef6f6;
+  color: #5ba4a4;
 }
 /*# sourceMappingURL=main.css.map */

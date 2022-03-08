@@ -1,7 +1,7 @@
 // ==================== Setup Section Start ========================
 
 const express = require("express");
-
+const data = require("./public/data/data.json")
 const port = process.env.PORT || 3000;
 
 const app = express();
@@ -10,7 +10,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 // Needed to use "body"
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 // Used to style the pages
 app.use(express.static("public"))
 
@@ -19,7 +19,9 @@ app.use(express.static("public"))
 // ==================== Get/Post Section Start ========================
 
 app.get("/", function(req, res) {
-    res.render("main");  
+    res.render("main", {
+        data: data
+    });  
 })
 
 // ==================== Get/Post Section Start ========================

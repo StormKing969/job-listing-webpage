@@ -59,42 +59,57 @@
     </div>
   </div>
 
-  <div class="card_container">
-    <img src="/images/photosnap.svg" alt="Company Logo">
+  <% data.forEach(item => { %>
+    <div class="card_container">
+      <img src=<%= item.logo %> alt="Company Logo">
 
-    <div class="company">
-      <h3 class="company_name">Photosnap</h3>
+      <div class="company">
+        <h3 class="company_name">
+          <%= item.company %>
+        </h3>
 
-      <div class="quality">
-        <span class="recently_added">NEW!</span>
-        <span class="recently_featured">FEATURED</span>
+        <div class="quality">
+          <% if(item.new == true) { %>
+            <span class="recently_added">NEW!</span>
+          <% } %>
+          
+          <% if(item.featured == true) { %>
+            <span class="recently_featured">FEATURED</span>
+          <% } %>
+        </div>
+      </div>
+
+      <div class="job_title">
+        <h2>
+          <a href="#">
+            <%= item.position %>
+          </a>
+        </h2>
+      </div>
+
+      <div class="job_attributes">
+        <span><%= item.postedAt %></span>
+        <span class="dot"></span>
+        <span><%= item.contract %></span>
+        <span class="dot"></span>
+        <span><%= item.location %></span>
+      </div>
+      
+      <hr class="line_break">
+
+      <div class="job_languages">
+        <span><%= item.role %></span>
+        <span><%= item.level %></span>
+        <% item.languages.forEach(element => { %>
+          <span><%= element %></span>
+        <% }); %>
+
+        <% item.tools.forEach(element => { %>
+          <span><%= element %></span>
+        <% }); %>
       </div>
     </div>
-
-    <div class="job_title">
-      <h2>
-        <a href="#">Senior Frontend Developer</a>
-      </h2>
-    </div>
-
-    <div class="job_attributes">
-      <span>1d ago</span>
-      <span class="dot"></span>
-      <span>Full Time</span>
-      <span class="dot"></span>
-      <span>USA only</span>
-    </div>
-    
-    <hr class="line_break">
-
-    <div class="job_languages">
-      <span>Frontend</span>
-      <span>Senior</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-    </div>
-  </div>
+  <% }) %>
 </main>
 
 

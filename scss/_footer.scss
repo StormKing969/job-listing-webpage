@@ -1,7 +1,7 @@
 .attribution { 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 11px; 
     text-align: center; 
     margin: .2rem .5rem;
@@ -12,7 +12,7 @@
         text-decoration: underline;
 
         &:hover {
-            color: $light-grayish-cyan;
+            color: $desaturated-dark-cyan;
         }
     }
 }

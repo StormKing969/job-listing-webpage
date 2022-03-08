@@ -26,6 +26,9 @@
     }
 
     .quality {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1rem;
 
         span {
             background: $desaturated-dark-cyan;
@@ -33,7 +36,7 @@
             padding: .5rem .6rem;
             font-size: .8rem;
             font-weight: $bold-weight;
-            margin: 0 .1rem;
+            margin: 0 .1rem .5rem;
             text-align: center;
         }
 
@@ -68,6 +71,7 @@
 .job_attributes {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -90,10 +94,15 @@
 }
 
 .job_languages {
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    // margin-bottom: .5rem;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: flex-start;
+    align-items: center;
 
     span {
         background: $dark-grayish-cyan-attributes;
@@ -102,7 +111,8 @@
         font-size: .8rem;
         font-weight: $bold-weight;
         text-align: center;
-        padding: 1rem 0;
+        padding: 1rem;
+        margin: 0 0 .8rem;
         transition: .3s all ease-in-out;
         cursor: pointer;
 
