@@ -92,6 +92,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 85%;
+  margin-bottom: 1rem;
 }
 
 .selected_languages .language_style {

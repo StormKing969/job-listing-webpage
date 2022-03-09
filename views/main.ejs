@@ -12,46 +12,6 @@
           <img src="/images/icon-remove.svg" alt="Remove Icon">
         </div>
       </div>
-      <div class="language_style">
-        <span class="language_name">
-          Senior
-        </span>
-        <div class="cross_img">
-          <img src="/images/icon-remove.svg" alt="Remove Icon">
-        </div>
-      </div>
-      <div class="language_style">
-        <span class="language_name">
-          HTML
-        </span>
-        <div class="cross_img">
-          <img src="/images/icon-remove.svg" alt="Remove Icon">
-        </div>
-      </div>
-      <div class="language_style">
-        <span class="language_name">
-          CSS
-        </span>
-        <div class="cross_img">
-          <img src="/images/icon-remove.svg" alt="Remove Icon">
-        </div>
-      </div>
-      <div class="language_style">
-        <span class="language_name">
-          React
-        </span>
-        <div class="cross_img">
-          <img src="/images/icon-remove.svg" alt="Remove Icon">
-        </div>
-      </div>
-      <div class="language_style">
-        <span class="language_name">
-          Java
-        </span>
-        <div class="cross_img">
-          <img src="/images/icon-remove.svg" alt="Remove Icon">
-        </div>
-      </div>
     </div>
 
     <div class="clear_btn">
@@ -98,14 +58,14 @@
       <hr class="line_break">
 
       <div class="job_languages">
-        <span><%= item.role %></span>
-        <span><%= item.level %></span>
+        <span class="choice"><%= item.role %></span>
+        <span class="choice"><%= item.level %></span>
         <% item.languages.forEach(element => { %>
-          <span><%= element %></span>
+          <span class="choice"><%= element %></span>
         <% }); %>
 
         <% item.tools.forEach(element => { %>
-          <span><%= element %></span>
+          <span class="choice"><%= element %></span>
         <% }); %>
       </div>
     </div>
